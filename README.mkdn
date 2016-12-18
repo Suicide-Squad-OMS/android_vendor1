@@ -1,5 +1,5 @@
 
-Resurrection Remix OS Nougat Source 2016
+Resurrection Remix OS Nougat-OMS Source 2016
 ===================
 
 
@@ -12,7 +12,7 @@ familiar with [Establishing a build environment](http://source.android.com/sourc
 
 How to build Resurrection Remix ROM for your device - Tutorial
 --------
-### New way to set up and build Resurrection Remix.
+### New way to set up and build Resurrection Remix OMS.
 
 ##### Refer to [scripts](https://github.com/akhilnarang/scripts) to setup build env
 
@@ -81,7 +81,7 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 
 ##### Initializing the RR repo and downloading the manifest
 
-      $  repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
+      $  repo init -u https://github.com/ResurrectionRemixOMS7/platform_manifest.git -b nougat-oms
 
 ##### Syncing the source
 [Hint: This might take a long time as the source is ~20GB]
