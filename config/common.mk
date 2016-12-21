@@ -71,7 +71,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+    CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
@@ -170,8 +170,9 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhotoTable
 
-# Include librsjni explicitly to workaround GMS issue
+# Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
     librsjni
 
 # Custom CM packages
@@ -293,7 +294,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 5.8.0
-    CM_VERSION := ResurrectionRemix-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+RR_BUILDTYPE ?= UNOFFICIAL
+CM_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(CM_VERSION) \
