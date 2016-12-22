@@ -11,18 +11,16 @@ echo -e ${blu}" 〉 3- Nightly "${txtrst}${red}"     ︱ Option for the only off
 echo -e "";
 echo -e ${blu}" 〉 4- Weekly "${txtrst}${red}"      ︱ Option for the only official weekly builders"${txtrst}
 echo -e "";
-echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Unofficial by default"${txtrst}
+echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Without build-type title"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
-if [ -z $askvariant ];then
 read -t 30 askvariant || autovariant=1
-fi
 sleep 1
 if [ "$autovariant" == "1" ]
 then
-RR_BUILDTYPE=unofficial
+export RR_BUILDTYPE=
 $normal
 sleep 1
 fi
@@ -30,7 +28,7 @@ if [ "$askvariant" == "1" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building official variant "${txtrst}
-RR_BUILDTYPE=official
+export RR_BUILDTYPE=-official
 echo -e "";
 echo -e "";
 $normal
@@ -40,7 +38,7 @@ if [ "$askvariant" == "2" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building unofficial variant "${txtrst}
-RR_BUILDTYPE=unofficial
+export RR_BUILDTYPE=-unofficial
 echo -e "";
 echo -e "";
 $normal
@@ -50,7 +48,7 @@ if [ "$askvariant" == "3" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building nightly variant "${txtrst}
-RR_BUILDTYPE=nightly
+export RR_BUILDTYPE=-nightly
 echo -e "";
 echo -e "";
 $normal
@@ -60,7 +58,7 @@ if [ "$askvariant" == "4" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building weekly variant "${txtrst}
-RR_BUILDTYPE=weekly
+export RR_BUILDTYPE=-weekly
 echo -e "";
 echo -e "";
 $normal
