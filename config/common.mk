@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # Substratum
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Substratum/projekt.substratum_four.apk:system/app/Substratum/projekt.substratum_four.apk
+    vendor/cm/prebuilt/Substratum/projekt.substratum_four_hundred_ninety.apk:system/app/Substratum/projekt.substratum_four_hundred_ninety.apk
 
 # DeskClock
 PRODUCT_COPY_FILES += \
