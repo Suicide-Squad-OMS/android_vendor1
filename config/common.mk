@@ -298,7 +298,7 @@ PRODUCT_VERSION = 5.8.0
 ifneq ($(RR_BUILDTYPE),)
 CM_VERSION := RR-N-OMS-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
 else
-CM_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+CM_VERSION := RR-N-OMS-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
