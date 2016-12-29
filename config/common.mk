@@ -188,9 +188,9 @@ PRODUCT_PACKAGES += \
     WeatherProvider \
     OmniStyle \
     OmniSwitch \
-    SoundRecorder \
-    Screencast \
+	WallpaperPicker \
     masquerade
+    
 
 # Exchange support
 PRODUCT_PACKAGES += \
