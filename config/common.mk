@@ -181,7 +181,6 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
     ResurrectionOTA \
     ResurrectionStats \
     Trebuchet \
