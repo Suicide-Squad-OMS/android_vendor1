@@ -42,7 +42,7 @@ echo -e ${blu}" 〉 8- Final "${txtrst}${red}"       ︱ Only for the final rele
 echo -e "";
 echo -e ${blu}" 🕑  30/sec Time-out"${txtrst}${red}"︱ Default option"${txtrst}
 echo -e "";
-echo -e ${cya}" ▼ Pick a number"${txtrst}
+echo -e ${blu}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
 read -t 30 askvariant
