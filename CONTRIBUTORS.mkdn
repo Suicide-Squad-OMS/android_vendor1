@@ -187,6 +187,7 @@ Maintainers (CyanogenMod 14.0):
 * __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
 * __Xiaomi Mi3/4 (cancro):__ JoeyRizzoli
 * __Xiaomi Redmi Note 3 (kenzo):__ TheStrix
+* __ZTE Axon 7 (axon7):__ bmc08gt, c457, tdm
 * __ZTE Nubia Z9 Max (nx510j):__ dianlujitao
 
 FreeXperia Team:
