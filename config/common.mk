@@ -191,6 +191,7 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     OmniSwitch \
 	WallpaperPicker \
+    OmniJaws \
     masquerade
     
 
